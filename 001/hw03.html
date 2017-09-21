@@ -1,0 +1,19 @@
+<?php
+function multiply($x=1,$y=0)
+{
+    $y++;
+    if($y > 9)
+    {
+        $x++;
+        $y = 1;
+        echo "<br />";
+    }
+    echo $x*$y." , ";
+    if($x < 9 || $y < 9)
+    {
+        multiply($x,$y);
+    }
+}
+ 
+multiply();
+?>
